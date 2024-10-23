@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아무튼 떠난 모험</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">아무튼 떠난 모험</h1>
+        <p id="subtitle">캐릭터 선택하여 모험 떠나기</p>
+        <button id="soundToggle" class="sound-button">모험 갈 때 들으면 좋은 노래</button>
+        <div id="characters">
+            <img src="character1.png" alt="캐릭터 1" class="character" data-character="character1">
+            <img src="character2.png" alt="캐릭터 2" class="character" data-character="character2">
+            <img src="character3.png" alt="캐릭터 3" class="character" data-character="character3">
+        </div>
+    </div>
+
+    <audio id="bgMusic" src="background.mp3" loop></audio>
+    <audio id="selectSound" src="effect-sound.mp3"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

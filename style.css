@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DOSGothic';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background-image1.jpg');
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+#container {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+.sound-button {
+    position: absolute;
+    top: 10%;
+    left:50%;
+    width: ; /* 너비 설정 */
+    height: 40px; /* 높이 설정 */
+    background-color: royalblue;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DOSGothic';
+
+	border: 0;
+	padding: 15px 25px;
+	display: inline-block;
+	text-align: center;
+	color: rgb(33, 33, 33);
+
+    
+        background: rgba(240,210,100,1);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(240,210,100,1)), to(rgba(229,201,96,1)));
+        background: -webkit-linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        background: -moz-linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        background: -o-linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        background: linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0d264', endColorstr='#e5c960', GradientType=0 );
+        margin: 10px auto;
+        padding: 4px 25px;  
+
+        background-color: #f0d264;
+
+	border:1px;
+    border-radius: 20px;
+    border-color: #DBC05B;
+
+    box-shadow:0px 4px 0px #D1B757;}
+
+.btn.yellow:active {box-shadow: 0 0 #ff4c4b; background-color: #D6BB59;
+    
+}
+.sound-button:active {background: #DBC05B;}
+.color .yellow {background: #f0d264;}
+
+
+#characters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.character {
+    width: 100px; /* 크기를 조정할 수 있음 */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.character:hover {
+    transform: scale(1.1); /* 마우스 호버 시 크기 증가 */
+}
